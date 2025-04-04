@@ -1,0 +1,26 @@
+pipeline:
+  name: Pipeline1
+  identifier: Pipeline1
+  projectIdentifier: DevOps
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Test
+        identifier: Test
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Email
+                  name: Email_1
+                  identifier: Email_1
+                  spec:
+                    to: vipinsgi@gmail.com
+                    cc: ""
+                    subject: Test
+                    body: Test
+                  timeout: 10m
+        tags: {}
