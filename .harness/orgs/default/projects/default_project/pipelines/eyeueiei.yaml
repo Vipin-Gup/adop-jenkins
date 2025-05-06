@@ -1,0 +1,26 @@
+pipeline:
+  name: eyeueiei
+  identifier: eyeueiei
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: yeyeue
+        identifier: yeyeue
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Email
+                  name: Email_1
+                  identifier: Email_1
+                  spec:
+                    to: vipinsgi@gmail.com
+                    cc: ""
+                    subject: Test
+                    body: test
+                  timeout: 10m
+        tags: {}
